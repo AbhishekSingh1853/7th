@@ -17,7 +17,7 @@
             width: 1200PX;
             display: inline-block;
             border-radius: 4PX;
-            padding-left: 5PX;
+            padding-left: 25PX;
             padding-top: 5PX;
         }
 
@@ -40,7 +40,6 @@
             font-size: 14px;
             display: inline-block;
         }
-
         .textcolor3 {
             font-size: 10px;
             display: inline-block;
@@ -50,50 +49,69 @@
             background-color: white;
             width: 200PX;
             height: 236PX;
-            margin-left: 3px;
+           /* margin-left: 10px; */
             display: inline-block;
-            border: solid 0.00005px;
+            /* border: solid 0.00005px; */
+            text-align: center;
+            position: relative;
+            
         }
 
         .largebox {
             background-color: white;
             width: 1200PX;
             height: 240PX;
+            
         }
-        button{
-         width: 200PX;    
+       .smallbox1{
+            background-color: green;
+            position: absolute;
+            left: 0PX;
+            top: 0PX;
+            width: 30PX;
+            height: 40PX;
         }
+        
+
+       button {
+            width: 200PX;
+        }
+
         button:hover {
             width: 200PX;
-            color: lightgray;
+           background-color : rgb(192, 10, 10);
         }
+        .space{
+            padding-left: 35PX;
+        }
+        
     </Style>
 </head>
 
 <body>
     <Div class=" bgcolor box1 ">
-        <Span> <Span style="background-color:rgb(255, 98, 0) ;">91</Span> Mobiles</Span> &nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;
-        <Span> Mobiles & More</Span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <Span> Top 10</Span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <span> Compare</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <Span> Upcoming Mobiles</Span> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <span> <input style="font-size: 17px" type="text" placeholder="Search for products or brands..."> </span>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <span> Loging</span>
+        <Span class="space"> <Span style="background-color:rgb(255, 98, 0) ;">91</Span> Mobiles</Span> 
+        <Span class="space"> Mobiles & More</Span> <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *\-->
+        <Span class="space"> Top 10</Span> 
+        <span class="space"> Compare</span> 
+        <Span class="space"> Upcoming Mobiles</Span> 
+        <span class="space"> <input style="font-size: 17px ; width: 300PX;" type="text" placeholder="Search for products or brands..."> </span>
+        
+        <span Class="space"> Loging</span>
     </Div>
     <div class="bgcolor2 box1">
-        <Span> <b> Upcoming Mobiles </b></Span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <span class="textcolor1"> Upcoming Mobiles </span>
+        <Span class="space"> <b> Upcoming Mobiles </b></Span> 
+        <span class="textcolor1 space"> Upcoming Mobiles </span>
     </div>
     <div class="largebox">
-        <div class="smallbox">
-            <img src="vivo-S15-Pro.jpg" alt="" height="150PX" width="150PX">
+        <div class="smallbox"> 
+            <span class="smallbox1"> Abhishek </span>
+                      <img src="vivo-S15-Pro.jpg" alt="" height="150PX" width="150PX">
             <span style=" text-align: center;"> Xiaomi Redmi K40 </span>
             <Br>
             <P class="textcolor2"><B> Rs. 22,490 </B> </p>
             <P class="textcolor3"> (Expected)</P>
-            <button> View Details</button>
+            <button > View Details</button>
         </div>
         <div class="smallbox">
             <img src="vivo-S15-Pro.jpg" alt="" height="150PX" width="150PX">
