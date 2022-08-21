@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div {
+        vertical-align: top;
+    }
+
+    .largebox {
+        margin-top: 50PX;
+        height: 320PX;
+        width: 850PX;
+        background-color: white;
+        margin-left: 5PX;
+        margin-right: 2PX;
+        display: inline-block;
+    }
+
+    .smallbox {
+        height: 290PX;
+        width: 23.5%;
+        margin-left: 5PX;
+        margin-top: 15PX;
+        display: inline-block;
+        position: relative;
+        border: .1PX solid;
+
+
+    }
+
+    .trending {
+        background-color: palevioletred;
+        border-radius: 30PX;
+        margin-top: 10PX;
+        margin-left: 10PX;
+        margin-bottom: 10PX;
+        width: 50PX;
+        text-align: center;
+        font-size: 10PX;
+
+    }
+
+    .smallbox:hover .trending {
+        background: linear-gradient(to right, rgb(131, 212, 131) 0%, rgba(18, 195, 18, 0.658) 100%);
+        display: block;
+    }
+
+    button {
+        width: 20PX;
+        background-color: black;
+        color: white;
+    }
+
+    .smallbox:hover {
+        height: 300X;
+        border: .5px solid;
+    }
+
+    .smallbox:hover .Mybutton {
+        width: 195PX;
+        background-color: black;
+        color: white;
+        display: block;
+
+    }
+
+    .Mybutton {
+        display: none;
+        position: absolute;
+        bottom: 0;
+    }
+
+    .number1 {
+        height: 10PX;
+        display: inline-block;
+        width: 195PX;
+    }
+
+    .numberleft {
+        font-size: 10px;
+        width: 40PX;
+        display: inline-block;
+    }
+
+    .numberright {
+        font-size: 10PX;
+        /* width: 40PX; */
+        position: absolute;
+        right: 20PX;
+        display: inline-block;
+
+    }
+
+    .textbox {
+        height: 180PX;
+        width: 180px;
+    padding-left: 8PX;
+    }
+</style>
+
+<body style="background-color:black;">
+    <div class="largebox">
+        <div class="smallbox">
+            <div class="trending">
+                Trending
+            </div>
+            <div class="textbox"> <B> Certified ScrumMaster (CSM) &reg; </B>
+                <Ul style=" padding-left: 17PX;">
+                    <li style="font-size: 15PX;"> 16 hrs of life innstructo-led sessions and experiential workshops</li>
+                    <li style="font-size:15PX;"> Get Trained by Scrun Alliance CSTs and earn PDUs and SEUs</li>
+                </Ul>
+            </div>
+                <br>
+                <div>
+                    <div>
+                        <hr>
+                    </div>
+                    <div class="number1">
+                        <div class="numberleft"> 16 hrs</div>
+                        <div class="numberright"> &#9734; 5 </div>
+                    </div>
+                </div>
+                <Div> <button type="button" class="Mybutton btn btn-info"> Start Learning</button></Div>
+            </div>
+        
+
+        <div class="smallbox">
+            <div class="trending">
+                Trending
+            </div>
+            <div class="textbox"> <B> Data Science Bootcamp </B>
+                <Ul style=" padding-left: 17PX;">
+                    <li style="font-size: 15PX;"> 140 hours of live and interactive sesssion by industry experts</li>
+                    <li style="font-size:15PX;"> Immersive Learning with Guided Hands-on exercises ( Cloud Labs)</li>
+                </Ul>
+            </div>
+            <br>
+            <div>
+                <hr>
+            </div>
+
+            <div class="number1">
+                <div class="numberleft"> 140 hrs</div>
+                <div class="numberright"> &#9734; 4.0 </div>
+            </div>
+
+            <Div> <button type="button" class="Mybutton btn btn-info"> Start Learning</button></Div>
+        </div>
+
+        <div class="smallbox">
+            <div class="trending">
+                Trending
+            </div>
+            <div class="textbox"> <B> PMP &reg; Certification </B>
+                <Ul style=" padding-left: 17PX;">
+                    <li style="font-size: 15PX;"> 35 hrs of live and interactive instructor-led sessions</li>
+                    <li style="font-size:15PX;"> Certification journey suppory with mock exams and Practive test
+                        questions</li>
+                </Ul><br>
+            </div>
+            <br>
+            <div>
+                <hr>
+            </div>
+
+            <div class="number1">
+                <div class="numberleft"> 32 hrs</div>
+                <div class="numberright"> &#9734; 5 </div>
+            </div>
+
+            <Div> <button type="button" class="Mybutton btn btn-info"> Start Learning</button></Div>
+        </div>
+
+        <div class="smallbox">
+            <div class="trending">
+                Trending
+            </div>
+            <div class="textbox"> <B> Full-Stack Development BootCamp</B>
+                <Ul style=" padding-left: 17PX;">
+                    <li style="font-size: 15PX;"> 80 Hours of live interactive sessions and experiential workshops</li>
+                    <li style="font-size:15PX;"> Get Trained by Scrun Alliance CSTs and earn PDUs and SEUs</li>
+                </Ul>
+            </div>
+            <br>
+            <div>
+                <hr>
+            </div>
+            <div class="number1">
+                <div class="numberleft"> 132 hrs</div>
+                <div class="numberright"> &#9734; 4.5 </div>
+            </div>
+            <div> <button type="button" class="Mybutton btn btn-info"> Start Learning</button></Div>
+        </div>
+    </div>
+</body>
+</html>

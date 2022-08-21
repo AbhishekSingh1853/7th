@@ -13,7 +13,7 @@
     }
     .chat {
         position: absolute;
-        bottom: 0;
+        bottom: 30PX;
         right: 0;
         width: 250PX;
         text-align: center;
@@ -37,22 +37,32 @@
         text-align: center;
         border-radius: 3PX;
     }
-   .typebox {
-        width: 240PX;
+
+   .chat:hover .typebox {
+        width: 230pX;
         height: 50PX;
         position: absolute;
-        bottom: 0;
+        bottom:0;
         right: 0;
-        border-radius: 5PX;
-        color: white;
+        border-radius: 2PX;
+        color: black;
+        display: block;
+        margin-right: 3PX;
+    }
+    .typebox {
+        display: none;
+        position: absolute;
+        bottom: 0;
     }
 </style>
 <body>
+    <input type="file">
     <div class="chat">
+        
         <div class="shortbox">
             Chat here
         </div>
-        
+        <div class="typebox"> <input class="typebox" type="text" placeholder="type here"> <input type="file"></div>
     </div>
 </body>
 </html>
