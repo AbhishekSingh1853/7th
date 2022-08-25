@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    .flex {
+        display: flex;
+        height: 40PX;
+        justify-content: left;
+
+    }
+    div{
+        vertical-align: top;
+    }
+    .bgcolor {
+        background-color: #ebe7e7;
+    }
+
+    .first {
+        flex: 1;
+    }
+
+    .second {
+        flex: 2;
+    }
+
+    .thrid {
+        flex: 1;
+    }
+
+    button {
+        background-color: black;
+        color: white;
+        font-size: 6PX;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .flex2 {
+        display: flex;
+        height: 300PX;
+        justify-content: left;
+        
+    }
+
+    .first2 {
+        flex: 1;
+    }
+
+    .second2 {
+        flex: 3;
+    }
+ .Multi-buttton{
+
+    border-radius: 20PX;
+    background: linear-gradient(to right, rgb(198, 65, 121) 0%,   rgb(248, 21, 116) 100%);
+    border: none;
+    font-size: 6PX;
+    font-family: 'Times New Roman', Times, serif;
+ }
+ .lastbutton{
+    border-radius: 20PX;
+    border: none;
+    font-size:6PX;
+    background: linear-gradient(to right,  rgba(84, 0, 219, 0.546) 0%,  rgba(98, 77, 202, 0.993) 100%);
+    font-family: 'Times New Roman', Times, serif;
+ }
+ .Multi-box{
+    height: 18%;
+    width: 90%;
+    background-color: white;
+    margin-top: 3PX;
+    padding-left: 5PX;
+ }
+ span{
+    color: blue;
+ }
+</style>
+
+<body class="bgcolor">
+
+    <Div class="flex">
+        <div class="first"> TinyThougth </div>
+        <div class="second">
+            <button> Home</button>
+            <button> Newpost</button>
+        </div>
+        <div class="thrid">
+            <button> Signin</button>
+            <button> Signup</button>
+        </div>
+    </Div>
+    <div style="border-bottom:2PX Solid rgb(81, 170, 81) ;"> </div>
+    <div class="flex2">
+        <div class="first2">
+            <div style="width: 70%; border-right: 1px solid; border-color:  #e0dbdb; margin-top: 5PX;">
+                <Button class="Multi-buttton">Javascript</Button>
+                <button class="Multi-buttton"> Reaact</button>
+                <button class="Multi-buttton">Node.js</button>
+                <button class="Multi-buttton">React Router</button>
+                <button class="Multi-buttton"> Redux</button>
+                <button class="Multi-buttton">GraphQL</button>
+                <button class="Multi-buttton">HTMLS</button>
+                <button class="Multi-buttton"> CSS3</button>
+                <Button class="Multi-buttton">Java</Button>
+                <button class="Multi-buttton"> Python</button>
+                <button class="Multi-buttton"> Moview</button>
+                <Button class="lastbutton">All Possts</Button>
+            </div>
+       </div>
+        <div class="second2"> 
+            <div class="Multi-box" > 
+                <b style="font-size: 8PX;"> This was funny</b> 
+                <div style="font-size:5PX ;height: 10PX;"> by <span> Homer</span>  <span> Simpson </span> | <span> Node.Js</span>| Posted on thursday, November 28th 2019, 4:36:09 pm</div>
+                
+                <div style="font-size: 5pX;"> So, I Saw this video on Youtube and this guy was teaching something called "Naahd Daaht Jee Esss". i mean, if you have to teach French, do it prroperly!</div>
+            </div>
+            <div class="Multi-box">
+                <b style="font-size: 8PX;">  Java, Eh?</b> 
+                <div style="font-size:5PX ;height: 10PX;"> by <span> Homer</span>  <span> Simpson </span> | <span> Jave</span>| Posted on thursday, November 28th 2019, 4:34:43 pm</div>
+                
+                <div style="font-size: 5pX;">  Doh!</div>
+            
+            </div>
+            <div class="Multi-box">
+                <b style="font-size: 8PX;"> Why React</b> 
+                <div style="font-size:5PX ;height: 10PX;"> by <span> Homer</span>  <span> Simpson </span> | <span> React</span>| Posted on thursday, November 28th 2019, 4:34:06 pm</div>
+                
+                <div style="font-size: 5pX;"> Why do you have to  React to  everything? I mean all i said was that the reactor was gonna blow, what's the fuss about ?</div>
+            
+            </div>
+            <div class="Multi-box">
+                <b style="font-size: 8PX;"> Thoughts on JavaScript</b> 
+                <div style="font-size:5PX ;height: 10PX;"> by <span> Homer</span>  <span> Simpson </span> | <span> JavaScript</span>| Posted on thursday, November 28th 2019, 4:31:45 pm</div>
+                
+                <div style="font-size: 5pX;"> i love a hot cuppa java with my donut. particularly when i'm reading the script for my new moview.java and script, mmm, delicious!</div>
+            
+            </div>
+            
+        </div>
+
+    </div>
+</body>
+
+</html>

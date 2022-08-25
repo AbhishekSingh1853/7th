@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex {
+            display: flex;
+            height: 40PX;
+            justify-content: left;
+            
+
+        }
+
+        div {
+            vertical-align: top;
+        }
+
+        .bgcolor {
+            background-color: #ebe7e7;
+        }
+
+        .first {
+            flex: 1;
+        }
+
+        .second {
+            flex: 1;
+        }
+
+        .thrid {
+            flex: 1;
+            font-size: 8PX;
+            margin-top: 6PX;
+
+        }
+
+        button {
+            background-color: black;
+            color: white;
+            font-size: 6PX;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .flex2 {
+            display: flex;
+            height: 180PX;
+            width: 100%;
+            justify-content: left;
+            margin-top: 10PX;
+        }
+
+        .first2 {
+            flex: .5;
+            border-right:1PX Solid rgba(0, 0, 0, 0.712) ;
+            font-size: 8PX;
+        }
+
+        .second2 {
+            flex: 2;
+            margin-left: 3PX;
+        }
+         select{
+            font-size:6PX;
+        }
+        .new{
+
+            background-color:white; 
+            margin-left: 20PX;
+            margin-top: 10PX; 
+            font-size: 6PX; 
+            padding-left: 5PX;
+        }
+    </style>
+</head>
+
+<body class="bgcolor">
+
+    <Div class="flex">
+        <div class="first"> TinyThougth </div>
+        <div class="second">
+            <button> Home</button>
+            <button> Newpost</button>
+        </div>
+        <div class="thrid">
+            <Span > Homer Simpson</Span>
+            <button> Signup</button>
+        </div>
+    </Div>
+    <div style="border-bottom:1.5PX Solid rgb(81, 170, 81) ;"> </div>
+    <div class="flex2">
+        <div class="first2">New Post </div>
+        <div class="second2" >
+            <div style="height: 30PX; width:80%;" class="new">
+                <div> Title </div>
+                <div> React Hookes </div>
+            </div>
+            <div
+                style="height: 80PX; width:80%;" class="new">
+                <P> Type In your Thoughts in 200 words or less </P>
+                <P> So React has has introduced a superd New way to empower funsction components with state, side
+                    effects and other things,</P>
+            </div>
+            <div style="height: 10PX; width: 30%;" class="new"> 
+                <p> 115 of 200 Characters </p>
+            </div>
+            <div style="height: 20PX; width: 80%;" class="new">
+                <b> Select a category</b> <br>
+                <Select>
+                    <option > Select </option>
+                    <option> React</option>
+                    <option> Java</option>
+                    <option> Node.Js</option>
+                    <option> HTML</option>
+                </Select>
+            </div>
+            <button style="margin-left:20PX ;"> +Add </button>
+        </div>
+
+    </div>
+</body>
+
+</html>
