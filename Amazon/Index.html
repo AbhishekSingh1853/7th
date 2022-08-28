@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .flex {
+            display: flex;
+            height: 400PX;
+            justify-content: center;
+            width: 100%;
+            flex-direction: column;
+
+        }
+
+        .bluebox {
+            flex: 1;
+            width: 35%;
+            height: 10PX;
+            background-color: blue;
+        }
+
+        .buttonbox {
+            flex: 1;
+            /* height: 25PX;
+width: 50%; */
+            margin-left: 10PX;
+            /* margin-top: 3PX;
+margin-bottom: -2PX; */
+
+        }
+
+        .box1 {
+            border-radius: 8PX;
+            background-color: yellow;
+            color: black;
+            border: none;
+            /* width: inherit; */
+            font-size: 6PX;
+            height: 30PX;
+            width: 30%;
+            margin-top: 10PX;
+        }
+
+        .imagebox {
+            flex: 5;
+            width: 35%;
+            height: 250PX;
+            /* background-color: green; */
+            border-bottom: .5PX solid black;
+            border-top: .5PX solid black;
+        }
+
+        .lastbox {
+            flex: 1;
+            /* height: 40px; */
+            width: 35%;
+            padding-left: 5PX;
+        }
+
+        div {
+            vertical-align: top;
+            display: inline-block
+        }
+        .space{
+            margin-top: 3PX;
+        }
+        button{
+            text-align: center;
+            
+        }
+        .radius{
+            border-radius: 3PX;
+            border: none;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="flex">
+        <Div class="bluebox">
+            <input type="text" style="height: 20PX; width: 90%; margin-left: 10PX; border-radius: 5PX; margin-right: 20PX;" placeholder="Search Amazon.in">
+        </Div>
+        <div class="buttonbox">
+            <button class="box1"> <b> Proceed to Buy (1 item) </b> </button>
+        </div>
+        <div class="imagebox">
+            <div style=" height: 200PX; width:100% ;">
+                <div ><img src="../vivo-S15-Pro.jpg" alt="" height="100PX"
+                        width="100PX">
+                </div>
+
+                <div style=" height:180PX; width: 63%;">  
+
+                    <div class="space">      
+                    One Plus Nord CE 2 Lite 5G (Black Duk, 6 GB RAM, 12 GB Storage)</div>
+                   <div class="space"> <B> 19,999</B>  </div>
+                   <div class="space"> Eligible for free Shipping </div>
+                  <div class="space">  In stocck </div>
+                   <div class="space"><b> Size Name: </b> 6 GB RAM, 128GB Storage </div> 
+                   <div class=""> <b>Colour: </b> Black Dusk </div>
+                </div>
+                <div> 
+                    <Button >  <i class="fa fa-trash-o"></i> </Button> &nbsp;&nbsp;&nbsp; 
+                    <Button> + </Button> &nbsp; &nbsp;&nbsp;
+                    <button class="radius">Delete</button>
+                    <button class="radius">
+                        Save for later
+                    </button>
+
+                </div>
+            </div>
+        </div>
+        <div class="lastbox">
+            <P> <span style="color:blue;">
+                    Infinix InBook X1 Core i3 10th Gen -( 8GB/256GB) SSD/Windows 11--
+                </span>
+                <Span> Was removed from shopping Caart. </Span>
+            </P>
+
+
+        </div>
+
+    </div>
+</body>
+
+</html>
