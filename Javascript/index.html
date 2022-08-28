@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        div {
+            vertical-align: top;
+            display: inline-block;
+        }
+
+        input {
+            width: 95%;
+            height: 40PX;
+        }
+
+        button {
+            margin-left: 28%;
+        }
+
+        .songbox {
+            width: 75%;
+            height: 100vh;
+            position: relative;
+        }
+
+        .right {
+            position: absolute;
+            right: 3PX;
+        }
+
+        .txt {
+            font-size: 10PX;
+        }
+    </style>
+</head>
+<body>  
+    <Div class="inlineblock" style=" width: 20%;">
+        <input type="text" placeholder="Song Name" id="SongeName"><br>
+        <div class="txt"> Song name should be between 1-30 character</div>
+        <input type="text" placeholder="Signer Name" id="SingerName"><br>
+        <div class="txt"> Singer Name should be between 1-30 character</div>
+        <input type="number" placeholder="Ratting 1 to 5" id="ratting"><br>
+        <div class="txt"> Ratting should be between 1-5</div> <br>
+        <button onclick="addSong()"> submit </button>
+    </Div>
+    <div class="songbox" id="add1">
+    </div>
+</body>
+<script>
+
+    function addSong() {
+        let SongeName = document.getElementById('SongeName');
+        let SingerName = document.getElementById('SingerName');
+        let ratting = document.getElementById('ratting');
+        let div = document.getElementById('add1');
+        let name = SongeName.value
+        let Sname = SingerName.value
+        let Rate = parseInt(ratting.value)
+        let lenth1 = name.length;
+        let lenth2 = Sname.length;
+        let star =''
+        for (let i=1; i<=Rate; i++) {         
+            star +=  '&#9733'
+        }
+        if (Rate >= 1 && Rate <= 5 && lenth1 >= 1 && lenth1 <= 30 && lenth2 >= 1 && lenth2 <= 30) {
+            div.innerHTML = div.innerHTML + '<div>' + name + '&nbsp; by &nbsp;' + Sname + '</div>' + '<div class="right" >'
+                + star+ '</div> <br>';
+        }
+        else {
+            alert('please inupt correct entry ')
+        }
+    }
+
+</script>
+
+</html>
