@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    div {
+        vertical-align: top;
+        display: inline-block;
+    }
+
+    input {
+        width: 95%;
+        height: 40PX;
+    }
+
+    button {
+        margin-left: 28%;
+    }
+
+    .textclass {
+        width: 78%;
+        height: 100vh;
+        background-color: green;
+    }
+
+    .right {
+        position: absolute;
+        right: 3PX;
+    }
+
+    .txt {
+        font-size: 10PX;
+    }
+    .Smallbox{
+        background-color: red;
+        margin-top: 10px;
+        margin-left: 20px;
+        width: 600PX;
+        height: 100PX ;
+        position: relative;
+   }
+   
+   .circle {
+            border: 1px solid pink;
+            display: inline-block;
+            color: pink;
+            height: 1.5rem;
+            width: 1.5rem;
+            border-radius: 50%;
+            float: right;
+        }
+        
+    .button1{
+
+        display: block; 
+        position: absolute;
+        right: 0;
+    }
+</style>
+</head>
+<body>
+    <Div class="inlineblock" style=" width: 20%; background-color: blue;">
+        <input type="text" placeholder="Question" id="Question"><br>
+        <div class="txt"> Question should be between 1-50 character</div>
+        <input type="text" placeholder="Answer " id="Answer"><br>
+        <div class="txt"> Answer should be between 1-200 character</div>
+        <button onclick="addSong()"> Add </button>
+    </Div>
+    <div class="textclass">
+      <div id="box" >
+            <div>
+                <div id="Question1" >    </div>
+                <!-- <div id = 'BTM' >  
+                <button class="circle" onclick="addSong()" style="display: none;"> </button>
+                </div>
+            </div> -->
+             <div id="Answer1"></div>
+      </div>
+    </div>
+
+    
+</body>
+
+
+<script>
+              
+    function addSong() {
+        let Question = document.getElementById('Question');
+        let Answer = document.getElementById('Answer');
+        let div = document.getElementById('Question1');
+        let div1 = document.getElementById ('Answer1');
+        // let mybutton = document.getElementById('BTM');
+        //        let x = document.createElement('BTM');
+        //         x.innerHTML = 'clcik me';  
+        //         mybutton = x.appendChild(x);
+          Question = Question.value;
+          Answer  = Answer.value ;
+        //   div.innerHTML = div.innerHTML +'<div style="display: inline;" >'+ Question  + '</div> ';
+            // mybutton.innerHTML = mybutton.innerHTML +'<div class = "button1">'+ mybutton + '<br>' ;
+            // div1.innerHTML = '<div >' + div1 + '</div> <br>'  ;
+        let box = document.getElementById('box');
+                   box.innerHTML = box.innerHTML + '<div class = "Smallbox">'  + Question + ' <br>'  + '' + Answer + '</div>' ;
+                  //   box1.innerHTML = box1.innerHTML + div  + div1;              
+    }
+
+        // let showButton = document.getElementById('show-button')
+        //   showButton.style.display = 'none'
+        // function showDiv() {
+        //     let bodyDiv = document.getElementById('Question1')
+        //     bodyDiv.style.display = 'block'
+
+        //     // hide plus button
+        //     let showButton = document.getElementById('show-button')
+        //     showButton.style.display = 'none'
+
+        //     // show minus button
+        //     let hideButton = document.getElementById('hide-button')
+        //     hideButton.style.display = 'inline-block'
+
+        // }
+
+        // function hideDiv() {
+        //     let bodyDiv = document.getElementById('Question1')
+        //     bodyDiv.style.display = 'none';
+
+
+        //     //hide minus button
+        //     let hideButton = document.getElementById('hide-button')
+        //     hideButton.style.display = 'none'
+
+        //     //show plus
+        //     let showButton = document.getElementById('show-button')
+        //     showButton.style.display = 'inline-block'
+        // }
+
+</script>
+</html>

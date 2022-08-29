@@ -27,7 +27,9 @@
             height: 100vh;
             position: relative;
         }
-
+        .hight{
+            height: 40PX;
+        }
         .right {
             position: absolute;
             right: 3PX;
@@ -39,6 +41,7 @@
     </style>
 </head>
 <body>  
+    <Span style=" color: Red;"> &#9733 </Span>
     <Div class="inlineblock" style=" width: 20%;">
         <input type="text" placeholder="Song Name" id="SongeName"><br>
         <div class="txt"> Song name should be between 1-30 character</div>
@@ -63,12 +66,18 @@
         let Rate = parseInt(ratting.value)
         let lenth1 = name.length;
         let lenth2 = Sname.length;
-        let star =''
+        let star =' '
+        // alert ('-1');
+        // star.stlye.color = 'red' ;
+        // alert (0);
         for (let i=1; i<=Rate; i++) {         
             star +=  '&#9733'
         }
+        // alert (1);
+        // star.stlye.color = 'Red';
+        // alert (2);
         if (Rate >= 1 && Rate <= 5 && lenth1 >= 1 && lenth1 <= 30 && lenth2 >= 1 && lenth2 <= 30) {
-            div.innerHTML = div.innerHTML + '<div>' + name + '&nbsp; by &nbsp;' + Sname + '</div>' + '<div class="right" >'
+            div.innerHTML = div.innerHTML + '<div class= "hight">' + name + '&nbsp; by &nbsp;' + Sname + '</div>' + '<div class="right" >'
                 + star+ '</div> <br>';
         }
         else {
