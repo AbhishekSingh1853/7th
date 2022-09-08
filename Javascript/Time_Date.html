@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button onclick="DateAndTime()"> display Date and Time</button>
+    <input type="number" placeholder="input all 3 side of triangle">
+    <div id="result"></div>
+    
+    <script>
+        let week = [ "Sunday","Monday","Tuesday","Wednesday ","Thursday","Friday","Saturday"];
+        function DateAndTime(){  
+        
+            let display = document.getElementById('result');
+            let day= new Date()
+            let h =day.getHours();
+            let m=day.getMinutes();
+            let s=day.getSeconds();
+            display.innerHTML += 'Today is ' + week[day.getDay()] + ' And Time '+ h +':' + m +':' + s+'</br>';
+            // document.write(display);
+            // window.print(display);  this funcation is for Print the Winodw in PDF.
+            h =day.getMonth() +1;
+            m=day.getDate();
+            s=day.getFullYear();
+            display.innerHTML += 'Todays date :' +h+'-'+ m+'-'+s +'</br>'
+
+            h= document.getElementById (A);
+            m= document.getElementById (B);
+            s=document.getElementById (C);
+        let perimeter = (h + m + s)/2;
+        let area =  Math.sqrt(perimeter*((perimeter-h)*(perimeter-m)*(perimeter-s)));
+        display.innerHTML += area+ '</br>'
+            
+        }
+
+    </script>
+
+</body>
+</html>

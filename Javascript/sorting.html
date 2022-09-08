@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input type="number" placeholder="Number" id="number1">
+    <button onclick="inputvalues()"> larger number </button>
+    <div id="result"></div>
+    <button onclick="sorting()"> sorting</button>
+    <div id="result1"></div>
+    <script>
+        let num = []
+        function inputvalues() {
+            let input = document.getElementById('number1').value;
+            num.push(input)
+            display();
+        }
+        function display() {
+            let display = document.getElementById('result');
+            display.innerHTML = ''
+            for (let i = 0; i <= num.length - 1; i++) {
+                display.innerHTML += `<div> ${num[i]} </div>`
+            }
+        }
+        function sorting() {
+            alert(1)
+            for (let i = 0; i <= num.length - 1; i++, j++) {
+                 let j=0
+                for(let p=0; p<=j; p++ )
+
+                if ( num[p] < num [j]) {
+                    num[p] = x
+                    num[p+1] = y
+                 }
+            }
+            let display = document.getElementById('result1');
+            for (let i = 0; i <= num.length - 1; i++) {
+                display.innerHTML += `<div> ${num[i]} </div>`
+            }
+        }
+
+
+
+    </script>
+</body>
+
+</html>
